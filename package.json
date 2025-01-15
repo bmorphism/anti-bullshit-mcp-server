@@ -1,0 +1,50 @@
+{
+  "name": "anti-bullshit-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for analyzing claims, validating sources, and detecting manipulation using multiple epistemological frameworks (empirical, responsible, harmonic, and pluralistic)",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "Teglon Labs",
+    "email": "teglon@vibes.lol"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teglon/anti-bullshit-mcp-server.git"
+  },
+  "bin": {
+    "anti-bullshit-mcp-server": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "epistemology",
+    "claim-analysis",
+    "source-validation",
+    "manipulation-detection",
+    "fact-checking",
+    "critical-thinking",
+    "bullshit-detection"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
