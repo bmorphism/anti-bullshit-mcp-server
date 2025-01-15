@@ -3,6 +3,7 @@ export const VALIDATION_FRAMEWORKS = {
   // Western empirical framework focused on evidence and logic
   empirical: {
     validateClaim: (claim: string) => ({
+      claim,
       type: "empirical",
       requirements: [
         "Verifiable evidence from multiple sources",
@@ -19,6 +20,7 @@ export const VALIDATION_FRAMEWORKS = {
   // Indigenous framework focused on responsible truth and community impact
   responsible: {
     validateClaim: (claim: string) => ({
+      claim,
       type: "responsible",
       requirements: [
         "Benefits community wellbeing with documented impact",
@@ -35,6 +37,7 @@ export const VALIDATION_FRAMEWORKS = {
   // Eastern framework focused on harmony and contextual truth
   harmonic: {
     validateClaim: (claim: string) => ({
+      claim,
       type: "harmonic", 
       requirements: [
         "Maintains balance across different domains",
@@ -51,6 +54,7 @@ export const VALIDATION_FRAMEWORKS = {
   // Pluralistic framework that combines multiple validation approaches
   pluralistic: {
     validateClaim: (claim: string) => ({
+      claim,
       type: "pluralistic",
       requirements: [
         "Consider multiple ways of knowing and validate across frameworks",
