@@ -2,6 +2,8 @@
 
 A Model Context Protocol server for analyzing claims, validating sources, and detecting manipulation using multiple epistemological frameworks.
 
+<a href="https://glama.ai/mcp/servers/isszli7z1y"><img width="380" height="200" src="https://glama.ai/mcp/servers/isszli7z1y/badge" alt="Anti-Bullshit Server MCP server" /></a>
+
 ## Features
 
 The server provides three main tools for detecting and analyzing bullshit:
