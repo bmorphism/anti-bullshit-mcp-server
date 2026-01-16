@@ -17,10 +17,8 @@ const server = new Server(
   {
     capabilities: {
       tools: {
-        analyze_claim: true,
-        validate_sources: true,
-        check_manipulation: true
-      },
+        listChanged: true
+      }
     },
   }
 );
